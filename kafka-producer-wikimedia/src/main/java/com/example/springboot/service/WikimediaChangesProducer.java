@@ -23,7 +23,7 @@ public class WikimediaChangesProducer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    public void sendMessage(String msg) throws InterruptedException {
+    public void sendMessage() throws InterruptedException {
 
         //Reading real time stream data from k=wikimedia
         //To read realtime data , we use event source
